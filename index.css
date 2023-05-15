@@ -1,3 +1,41 @@
 nav {
     font-weight: bold;
+    /* width: 100vw; */
+    width: 100%;
+    background-color: #D6EFFF;
+}
+
+li {
+    list-style-type: none;
+    /*when I specify 2 values to margin, the first one is for the top and bottom side,
+     the second for the left and right side*/
+    margin: 0 2vw;
+    /* our font-size will be 3% of the height of the viewport */
+    font-size: 3vh;
+}
+
+a {
+    text-decoration: none;
+    /*also changed the font family but that's totally irrelevant*/
+    font-family: monospace;
+}
+
+a:hover {
+    background-color: #C6E9FF;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    /*this option by default dispose the elements in a row (flex-direction: row)*/
+    display: flex;
+}
+  
+body {
+    margin: 0;
+}
+
+input {
+    /* our font-size will be 3% of the height of the viewport */
+    font-size: 3vh;
 }
