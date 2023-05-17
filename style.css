@@ -1,8 +1,22 @@
+header{
+
+    padding: 2%;
+    background-color: #0545;
+/*    justify-content: space-between;*/
+}
+
 nav {
     font-weight: bold;
     /* width: 100vw; */
-    width: 100%;
-    background-color: #D6EFFF;
+    vertical-align: middle;
+    display: flex;
+}
+
+form{
+    direction: ltr;
+    margin-left: 10px;
+    flex: 1;
+    display: flex;
 }
 
 li {
@@ -15,9 +29,10 @@ li {
 }
 
 a {
+    color: #000;
     text-decoration: none;
     /*also changed the font family but that's totally irrelevant*/
-    font-family: monospace;
+    font-family: Vazirmatn;
 }
 
 a:hover {
@@ -25,12 +40,15 @@ a:hover {
 }
 
 ul {
-    margin: 0;
+    margin: 0 ;
     padding: 0;
     /*this option by default dispose the elements in a row (flex-direction: row)*/
+    direction: rtl;
+    flex: 1;
     display: flex;
 }
-  
+
+
 body {
     margin: 0;
 }
