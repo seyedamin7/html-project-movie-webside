@@ -1,7 +1,7 @@
 header{
 
     padding: 2%;
-    background-color: #0A4D68;
+    background-color: #272525;
 /*    justify-content: space-between;*/
 }
 
@@ -29,25 +29,19 @@ li {
 }
 
 #home {
-    color: #00FFCA;
+    color: #949796;
 }
 
 #home:hover {
-    color: black;
+    color: rgb(239, 233, 233) !important;
 }
 
 a {
-    color: #05BFDB;
-    text-decoration: none;
     /*also changed the font family but that's totally irrelevant*/
     font-family: Vazirmatn;
 }
 
-a:hover {
-    color: black;
-}
-
-ul {
+.header-nav {
     margin: 0 ;
     padding: 0;
     /*this option by default dispose the elements in a row (flex-direction: row)*/
@@ -56,18 +50,26 @@ ul {
     display: flex;
 }
 
+.header-nav a{
+    color: #485e61;
+    text-decoration: none;
+}
+.header-nav a:hover{
+    color: rgb(230, 220, 220) !important;
+}
+
 
 body {
     margin: 0;
 }
 #signin {
     font-weight: bold;
-    color: white ;
+    color: rgb(20, 105, 12) ;
     font-family: Vazirmatn;
     font-size: 20px;
 }
 #signin:hover{
-    color: black;
+    color: rgb(236, 229, 229);
 }
 #formsearch{
     margin-left: 5%;
@@ -76,12 +78,12 @@ body {
 #search {
     /* our font-size will be 3% of the height of the viewport */
     font-size: 3vh;
-    background-color: #B8E4F0;
-    color: #0B2447 !important;
+    background-color: #616363;
+    color: #ebefec !important;
     direction: rtl;
     
 }
 #search::placeholder {
-    color: black;
+    color: rgb(46, 44, 44);
     font-weight: bold !important;
 }
