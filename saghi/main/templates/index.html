@@ -1,0 +1,119 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{%static "style.css"%}">
+    <link rel="stylesheet" href="{%static "style2.css"%}">
+    <title>ساقی فیلم</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a id="signin" href="#" >
+                ورود
+            </a>
+            <form method="get" id="formsearch">
+                <img src="./assets/search.png" alt="search" style="margin-top: 0.7%;margin-right:0.5% ;" width="20" height="20">
+                <input type="text" style="padding: 5px;" id="search" placeholder="دنبال چی میگردی؟">
+
+            <ul class="header-nav">
+                <li><a href="./index.html" id="home">خانه</a></li>
+                <li><a href="#">سینمایی</a></li>
+                <li><a href="#">سریال</a></li>
+                <li><a href="#">انیمیشن</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <div class="overview">
+        <div class="slide-background">
+            <div class="slide" id="slide1">
+                
+            </div>
+            <div class="slide" id="slide2">
+                
+            </div>
+            <div class="slide" id="slide3">
+                
+            </div>
+            <div class="slide" id="slide4">
+
+            </div>
+
+        </div>
+        <div class="navar-filters">
+            <div id="filter1">
+                  
+            </div>
+            <div id="filter2">
+                  
+            </div>
+            <div id="filter3">
+                  
+            </div>
+            <div id="filter4">
+
+            </div>
+            <div id="filter5">
+
+            </div>
+        </div>
+        <div class="under-slide">
+            <div class="left">
+                <div class="navar-left">
+                      
+                </div>
+                <div class="navar-left">
+
+                </div>
+                <div class="navar-left">
+                      
+                </div>
+                <div class="navar-left">
+                      
+                </div>
+                <div class="navar-left">
+                      
+                </div>
+                <div class="navar-left">
+
+                </div>
+                <div id="navar-left7">
+
+                </div>
+
+            </div>
+            <div class="middle">
+                {% for x in section %}
+                    <a href="{{x.page_movies}}">
+                        <div class="navar-middle">
+                            <img class="aks-navarmiddle" src="{{x.poster}}" alt="{{x.title}}"/>
+                            <h2 class="onvan-film"> {{x.title}} </h2>
+                            <pre class="onvan-film">
+                                {{x.Description}}
+                            </pre>
+                            
+                        </div>
+                    </a>
+                {% endfor %}
+            </div>
+            
+        </div>    
+    </div>
+    <footer>
+        <ul class="footer-titels">
+            <li><a href="./index.html">خانه</a></li>
+            <li><a href="#">تماس با ما</a></li>
+            <li><a href="#">پشتیبانی</a></li>
+            <li><a href="#">سوالات متداول</a></li>
+        </ul>
+
+
+    </footer>
+</body>
+</html>

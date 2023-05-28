@@ -1,0 +1,89 @@
+header{
+
+    padding: 2%;
+    background-color: #272525;
+/*    justify-content: space-between;*/
+}
+
+nav {
+    font-weight: bold;
+    /* width: 100vw; */
+    vertical-align: middle;
+    display: flex;
+}
+
+form{
+    direction: ltr;
+    margin-left: 10px;
+    flex: 1;
+    display: flex;
+}
+
+li {
+    list-style-type: none;
+    /*when I specify 2 values to margin, the first one is for the top and bottom side,
+     the second for the left and right side*/
+    margin: 0 2vw;
+    /* our font-size will be 3% of the height of the viewport */
+    font-size: 3vh;
+}
+
+#home {
+    color: #949796;
+}
+
+#home:hover {
+    color: rgb(239, 233, 233) !important;
+}
+
+a {
+    /*also changed the font family but that's totally irrelevant*/
+    font-family: Vazirmatn;
+}
+
+.header-nav {
+    margin: 0 ;
+    padding: 0;
+    /*this option by default dispose the elements in a row (flex-direction: row)*/
+    direction: rtl;
+    flex: 1;
+    display: flex;
+}
+
+.header-nav a{
+    color: #485e61;
+    text-decoration: none;
+}
+.header-nav a:hover{
+    color: rgb(230, 220, 220) !important;
+}
+
+
+body {
+    margin: 0;
+}
+#signin {
+    font-weight: bold;
+    color: rgb(20, 105, 12) ;
+    font-family: Vazirmatn;
+    font-size: 20px;
+}
+#signin:hover{
+    color: rgb(236, 229, 229);
+}
+#formsearch{
+    margin-left: 5%;
+}
+
+#search {
+    /* our font-size will be 3% of the height of the viewport */
+    font-size: 3vh;
+    background-color: #616363;
+    color: #ebefec !important;
+    direction: rtl;
+    
+}
+#search::placeholder {
+    color: rgb(46, 44, 44);
+    font-weight: bold !important;
+}
